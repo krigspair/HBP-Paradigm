@@ -1,0 +1,180 @@
+# L-HBP ИНТЕГРАЦИЯ В SYSTEM MAP — СЕКЦИЯ ДЛЯ v1.3
+# Лингвистический компонент HBP — готовый текст для вставки
+# Дата: 26.02.2026
+# Источник: L-HBP_Research_Summary_v0.1.txt
+
+========================================================================
+ЧАСТЬ XX. L-HBP — ЛИНГВИСТИЧЕСКИЙ КОМПОНЕНТ
+========================================================================
+
+Статус: cross-cutting модуль, применяемый в B/C/D/O/E/Ed/M/S/T/P-HBP.
+Источник: L-HBP Research Summary v0.1 (25.02.2026).
+TRL: 2–5 (зависит от маркера).
+
+------------------------------------------------------------------------
+20.1. ТЕОРЕТИЧЕСКОЕ ОСНОВАНИЕ: ЯЗЫК КАК ACTIVE INFERENCE
+------------------------------------------------------------------------
+
+FEP-лингвистика (Murphy, Holmes & Friston 2024, Synthese):
+  Синтаксис естественного языка подчиняется FEP.
+  Turing–Chomsky Compression (TCC): операция MERGE = workspace,
+  минимизирующий variational free energy. K-complexity предложения =
+  формальная мера compression quality.
+  → Язык = generative model в действии.
+
+Коммуникация как active inference (Friston et al. 2020, Neurosci Biobehav Rev):
+  Диалог = belief synchronization через variational message passing.
+  Нарративный, вопросный, сценический, семиотический режимы.
+  Theta-gamma coupling + P300/N400 ERP = нейрокорреляты PE в речи.
+  → Mismatch experience (П10) имеет лингвистический субстрат.
+
+------------------------------------------------------------------------
+20.2. РЕЧЕВЫЕ БИОМАРКЕРЫ (DYNAMIC BIOMARKERS)
+------------------------------------------------------------------------
+
+Депрессия (мета-анализ Tølbøll 2019, 26 исследований):
+  - 1st person singular: d = 0.44 (medium)
+  - Negative emotion words: d = 0.72 (medium-large)
+  - Absolutist words: d = 0.38 (small-medium)
+
+Психоз (Tang et al. 2025, N=66, 357 образцов, 4 временные точки):
+  - Thought disorder: ↑ subordinating conjunctions (β=4.2, p<.001),
+    ↓ min semantic distance
+  - Negative symptoms: imageability, adj phrase length, semantic distance
+  - Suspiciousness: noun phrase rate, imageability
+
+CSD-лингвистические маркеры (Schreuder et al. 2022, N=122):
+  CSD в тексте за 1 SD до клинического сдвига.
+  Moving-window TTR, LIWC-категории, BERTopic session-to-session
+  similarity = лингвистические предвестники фазового перехода.
+
+LIWC + Big Five (Koutsoumpis et al. 2022, 31 мета, N=85724):
+  Self-report: r = .08–.14 (СЛАБО).
+  Observer-report: r = .18–.39 (УМЕРЕННО).
+  → LIWC ≠ замена тестов; LIWC = дополнительный процессный маркер.
+
+------------------------------------------------------------------------
+20.3. NLP/ML PIPELINE
+------------------------------------------------------------------------
+
+Инструменты (open-source):
+  - BERTopic (topic modeling, MIT license)
+  - SpaCy (POS, NER, dependency parse, MIT)
+  - NLTK (NLP toolkit, Apache 2.0)
+  - Praat / Parselmouth (акустика, GPL)
+  - GloVe / FastText (word embeddings, MIT/public domain)
+  - Personal Values Dictionary (Ponizovskiy et al. 2020, N=180K)
+  - LIWC-22 (платная лицензия)
+
+Данные:
+  - DAIC-WOZ (USC ICT, 189 интервью) — с осторожностью: bias,
+    shortcut learning (Burdisso et al. 2024, F1 = 0.90 но артефакт)
+  - Talkspace (166K+ сессий) — transformer-модели для engagement,
+    satisfaction, PHQ-8
+
+------------------------------------------------------------------------
+20.4. МАППИНГ НА ПОСТУЛАТЫ HBP
+------------------------------------------------------------------------
+
+| HBP-конструкт          | Лингвистический маркер           | TRL |
+|-------------------------|----------------------------------|-----|
+| Attractor trapping      | TTR ↓, BERTopic repeat patterns  | 4   |
+| Precision-weighting     | Hedge words, LIWC-certainty      | 3   |
+| PE (prediction error)   | Surprisal (LM perplexity)        | 2   |
+| CSD (фазовый переход)  | Autocorr↑, var↑, LIWC-affect     | 3   |
+| Депрессия (исход)       | 1st pers. sing. (d=0.44)         | 6   |
+| Neg. emotion (исход)    | Neg. emotion words (d=0.72)      | 6   |
+| Generative model struct.| Subordinating conj., sem. distance| 4   |
+| Ценности (FM4)          | Personal Values Dict. (N=180K)   | 5   |
+| Big Five (snapshot)     | LIWC-52 categories (r=.08–.14)   | 5   |
+| Метафоры (embodied)     | MIP/MIPVU + ML                   | 3   |
+| Code-switching (L2)     | Code-switching frequency          | 2   |
+| Belief alignment (П8)   | Turn-by-turn similarity           | 2   |
+| Нарративная идентичность| McAdams coding (r=.28–.31, N=500)| 5   |
+| Agency / communion      | McAdams 2006 coding manual        | 5   |
+
+------------------------------------------------------------------------
+20.5. ДВУЯЗЫЧИЕ И L2 В ТЕРАПИИ
+------------------------------------------------------------------------
+
+Pavlenko (2005, 2012): L2 = emotional distance.
+Harris et al.: L2 ↓ amygdala activation.
+Ortigosa-Beltrán et al. (2023): L1-L2 эмоциональная асимметрия.
+
+HBP-перевод:
+  L1 = priors с максимальной affective precision.
+  L2 = reduced precision → возможность reconsolidation через
+  сниженный эмоциональный порог.
+  Code-switching = prediction error (переключение языкового
+  generative model).
+  → L2 как инструмент в терапии — открытый вопрос для пилота.
+
+------------------------------------------------------------------------
+20.6. НАРРАТИВНАЯ ТЕРАПИЯ ЧЕРЕЗ FEP
+------------------------------------------------------------------------
+
+Мета-анализ (Hu et al. 2024, Front Psychiatry):
+  NT при депрессии: pooled SMD = −1.64 (CI: −1.95 to −1.32).
+  Эффект большой, но I² = 95.4% → высокая гетерогенность.
+
+HBP-перевод:
+  Нарратив = структура аттрактора.
+  Реавторинг (White & Epston) = изменение attribution prior.
+  Redemption sequences (McAdams, r=.31 с well-being) = успешный
+    фазовый переход.
+  Contamination sequences (r=−.28) = failed transition, re-trapping.
+
+------------------------------------------------------------------------
+20.7. ИНТЕГРАЦИЯ С МКПП-17.1
+------------------------------------------------------------------------
+
+МКПП-17.1 (Методика комплексного психолингвистического профайлинга):
+  17 блоков анализа, из которых для L-HBP наиболее релевантны:
+  - Блок 1: surprisal/perplexity, speech graph metrics
+  - Блок 2: MIP/MIPVU (метафоры)
+  - Блок 4: когнитивные искажения (Beck) через Grice-анализ
+  - Блок 5: LIWC-22
+  - Блок 12: verb tense ratio, agency word count
+  - Блок 16: semantic coherence, CSD-маркеры
+  - Блок 17: McAdams нарративная идентичность
+
+МКПП-17.1 может использоваться:
+  1. BASELINE: полный 12-блочный профиль
+  2. PROCESS MONITORING: блоки 1, 2, 4, 5, 12, 16, 17 (повторно)
+  3. CSD-ALERT: автоматический мониторинг лингвистических предвестников
+  4. OUTCOME: сравнение baseline ↔ post (redemption? agency?)
+
+------------------------------------------------------------------------
+20.8. ОГРАНИЧЕНИЯ
+------------------------------------------------------------------------
+
+  - Ecological validity: терапевтическая речь ≠ свободный текст
+  - Privacy: транскрипции = персональные данные (GDPR / 152-ФЗ)
+  - Bias: LIWC разработан на английском; RuLIWC существует, но слабее
+  - Reductionism: r = .08–.14 для Big Five → лингвистика ≠ замена тестов
+  - CSD-лингвистические маркеры: N=122, нужна репликация
+  - LLM hallucinations: AI-анализ текста требует human-in-the-loop
+  - BERT-модели: emerging field, не клинический стандарт
+
+------------------------------------------------------------------------
+20.9. ОТКРЫТЫЕ ВОПРОСЫ
+------------------------------------------------------------------------
+
+  Q1. Murphy et al. TCC — как верифицировать на клиническом материале?
+  Q2. L-HBP cross-cutting для каких форматов приоритетен?
+      → Рекомендация: D-HBP и C-HBP (наибольший объём транскрипций)
+  Q3. МКПП-17.1 как repeated-measures или single snapshot?
+      → Рекомендация: 4-блочный мониторинг (20.7)
+  Q4. CSD-лингвистический — достаточно ли для alert-системы?
+      → Нет, нужна комбинация с EMA + HRV (мультимодальный CSD)
+  Q5. L2 как инструмент — пилот нужен?
+      → Да, отдельный SCED с билингвальными клиентами
+
+========================================================================
+КОНЕЦ СЕКЦИИ L-HBP
+========================================================================
+
+ИНСТРУКЦИЯ ДЛЯ СБОРКИ v1.3:
+  Вставить как Часть XX после Части XIX (Пробелы).
+  В Части XIX обновить: «L-HBP — см. Часть XX» ✅
+  В Части VII добавить ссылку: «Лингвистические маркеры — см. Часть XX»
