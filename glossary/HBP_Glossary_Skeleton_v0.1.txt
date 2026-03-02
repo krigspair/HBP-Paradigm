@@ -1,0 +1,237 @@
+
+============================================================
+HBP GLOSSARY — СКЕЛЕТНЫЙ КАРКАС v0.1
+Дата: 26.02.2026
+Статус: Каркас для валидации → далее наполнение определениями
+============================================================
+
+СТРУКТУРА КАЖДОЙ БУДУЩЕЙ ЗАПИСИ:
+─────────────────────────────────
+ТЕРМИН (RU) | TERM (EN)
+Категория: [A–G]
+Определение: (2–3 предложения) ← будет на этапе 2
+Постулаты: P1, P5…
+Источник: автор, год
+Введён в: System Map v__
+─────────────────────────────────
+
+============================================================
+A. CORE HBP — Собственные конструкты парадигмы (19)
+============================================================
+
+A1.  Бытие-как-процесс | Being-as-Process                    → P1
+A2.  Субстрат | Substrate                                     → P2
+A3.  Двойное описание | Dual Description                      → P3
+A4.  Измерения бытия | Dimensions of Being (FM1–FM6)          → P6
+A5.  Активное интерсубъективное умозаключение | AISI
+     (Active Intersubjective Inference)                        → P8
+A6.  Теория ментализации третьего порядка | TTOM
+     (Theory of Third-Order Mentalizing)                       → P9
+A7.  Сложность–Гибкость–Устойчивость | CFR
+     (Complexity–Flexibility–Resilience)                       → P7, P11
+A8.  Locked-in brain (мозг в ловушке)                          → P11, IV
+A9.  Attractor trapping (захват аттрактором)                   → P11, IV
+A10. Эвристика 5 PHD | Heuristic 5 PHD
+     (Scan–Build–Disrupt–Track–Stabilize)                      → XIV
+A11. Уровни ре-взвешивания точности |
+     Precision Re-weighting Levels (0–3)                       → VII, XVIII
+A12. Hardware failure (сбой субстрата)                          → IV
+A13. Input failure (сбой входных данных)                        → IV
+A14. Software failure (сбой кода)                               → IV
+A15. Фальсифицируемость-файрвол |
+     Falsifiability Firewall                                   → P4, XV
+A16. Конструал | Construal                                     → P4
+A17. Reverie (ревери, состояние присутствия)                   → P8
+A18. Добавленная предсказательная ценность |
+     Added Predictive Value                                    → III, XV
+A19. Эпигенетический мост |
+     Epigenetic Bridging (Hardware ↔ Input)                    → IV
+
+============================================================
+B. FEP / ACTIVE INFERENCE — Принцип свободной энергии (12)
+============================================================
+
+B1.  Свободная энергия (вариационная) |
+     Variational Free Energy (F)                               → P4, XVII
+B2.  Прайоры (априорные ожидания) | Priors                     → P4, P5, XIII
+B3.  Ошибка предсказания | Prediction Error (PE)               → P5, P10, P13
+B4.  Точность | Precision                                      → P5, XVIII
+B5.  Взвешивание точности | Precision-weighting                → P5, XVIII
+B6.  Генеративная модель | Generative Model                    → P4, P5
+B7.  Активный вывод | Active Inference                         → P5
+B8.  Ожидаемая свободная энергия | EFE
+     (Expected Free Energy)                                    → P5
+B9.  Скорость обучения | Learning Rate                         → P4
+B10. Эпистемическое доверие | Epistemic Trust
+     (Fonagy)                                                  → P9
+B11. Mismatch experience (опыт рассогласования) |
+     (Ecker)                                                   → P10
+B12. AIMCT (Active Inference Model of
+     Coherence Therapy)                                        → P10
+
+============================================================
+C. ЭКЗИСТЕНЦИАЛЬНОЕ / ФЕНОМЕНОЛОГИЧЕСКОЕ (14)
+============================================================
+
+C1.  Umwelt (мир-вокруг) | FM1                                 → P6
+C2.  Mitwelt (мир-с-другими) | FM2                             → P6
+C3.  Eigenwelt (мир-собственный) | FM3                          → P6
+C4.  Überwelt (мир-сверх) | FM4                                 → P6
+C5.  Digitalwelt (цифровой мир) | FM5                           → P6
+C6.  Бытие-в-конечности-мира |
+     Being-in-the-Finitude-of-the-World | FM6                  → P6
+C7.  Dasein (вот-бытие) | Heidegger                            → VIII
+C8.  Geworfenheit (заброшенность) | Throwness                  → VIII
+C9.  Grenzsituation (пограничная ситуация) | Jaspers            → VIII
+C10. Переживание | Perezhivanie (Vygotsky)                      → VIII
+C11. Присутствие | Presence (Bugental)                          → III, P8
+C12. Отношения | Relations (Myasishchev)                        → III, P8
+C13. Wille zum Sinn (воля к смыслу) | Frankl                    → C4/FM4
+C14. 4 фундаментальные мотивации |
+     4 Fundamental Motivations (Längle)                        → P6
+
+============================================================
+D. СИНЕРГЕТИКА / ТЕОРИЯ СЛОЖНОСТИ (12)
+============================================================
+
+D1.  Аттрактор | Attractor                                     → P11, IV
+D2.  Фазовый переход | Phase Transition                        → P11
+D3.  Критическое замедление | CSD
+     (Critical Slowing Down)                                   → P11
+D4.  Метастабильность | Metastability                           → P7, V
+D5.  Негэнтропия | Negentropy                                  → XVII
+D6.  Диссипативная структура | Dissipative Structure
+     (Prigogine)                                               → XVII
+D7.  Самоорганизованная критичность | SOC
+     (Self-Organized Criticality, Per Bak)                     → Tier 2
+D8.  Координационная динамика | HKB model (Kelso)               → V, Tier 1
+D9.  Теория сетевого контроля | NCT
+     (Network Control Theory)                                  → P11
+D10. Synergetic Navigation System | SNS (Schiepek)               → P11
+D11. Показатель Ляпунова | Lyapunov Exponent                    → Tier 2
+D12. Cusp-модель катастрофы | Cusp Catastrophe Model            → Tier 2
+
+============================================================
+E. НЕЙРО / СУБСТРАТ (14)
+============================================================
+
+E1.  DMN (Default Mode Network) | Сеть пассивного режима        → P2, IX
+E2.  CEN (Central Executive Network) |
+     Центральная исполнительная сеть                           → P2
+E3.  SN (Salience Network) | Сеть выделения значимости          → P2
+E4.  HPA-ось | HPA Axis                                        → IV
+E5.  FKBP5 | ген стресс-ответа                                  → IV, Tier 1
+E6.  SLC6A4 | ген транспортера серотонина                        → IV, Tier 1
+E7.  NR3C1 | ген глюкокортикоидного рецептора                    → IV, Tier 1
+E8.  HRV / RMSSD | Вариабельность сердечного ритма              → VII
+E9.  MSE (Multiscale Entropy) |
+     Мультимасштабная энтропия                                 → V, VII
+E10. LZC (Lempel–Ziv Complexity) |
+     Сложность Лемпеля–Зива                                   → VII
+E11. CAR (Cortisol Awakening Response) |
+     Кортизольный ответ пробуждения                            → VII
+E12. tDCS / rTMS | Нейростимуляция                              → C-HBP
+E13. Интероцепция | Interoception                               → P5, P8
+E14. Core Affect (базовый аффект) | Barrett                     → XIII
+
+============================================================
+F. КЛИНИЧЕСКИЙ / ОПЕРАЦИОНАЛЬНЫЙ (18)
+============================================================
+
+F1.  SCED (Single-Case Experimental Design) |
+     Одиночный экспериментальный план                          → XV
+F2.  Tau-U | Непараметрическая мера эффекта                     → XV
+F3.  RCI (Reliable Change Index) |
+     Индекс надёжного изменения                                → XV
+F4.  Cohen's d | Размер эффекта                                  → XV
+F5.  PHQ-9 | Шкала депрессии                                    → VII
+F6.  GAD-7 | Шкала тревоги                                      → VII
+F7.  MAIA-2 | Шкала интероцептивного осознавания                → VII
+F8.  DERS-18 | Шкала трудностей регуляции эмоций                → VII
+F9.  MCQ-30 | Опросник метакогниций                             → VII
+F10. AAQ-II | Опросник принятия и действия                      → VII
+F11. ETMCQ-R | Опросник эпистемического доверия                 → VII, P9
+F12. ECR-12 | Опросник привязанности                            → VII, XIII
+F13. WAI-SR | Опросник рабочего альянса                         → VII
+F14. RFQ-8 | Опросник рефлексивного функционирования            → VII, P9
+F15. HGF (Hierarchical Gaussian Filter) |
+     Иерархический гауссов фильтр                             → VII
+F16. EMA (Ecological Momentary Assessment) |
+     Экологическая мгновенная оценка                           → VII
+F17. HDT (Heartbeat Discrimination Task) |
+     Задача различения сердцебиения                            → VII
+F18. EDA (Electrodermal Activity) |
+     Электродермальная активность                              → VII
+
+============================================================
+G. ФОРМАТЫ HBP (10)
+============================================================
+
+G1.  B-HBP  | Brief (краткий)                                  → VI
+G2.  D-HBP  | Depth (глубинный)                                → VI
+G3.  C-HBP  | Clinical (клинический)                           → VI
+G4.  O-HBP  | Organizational (организационный)                 → VI
+G5.  E-HBP  | Executive (коучинг руководителей)                → VI
+G6.  Ed-HBP | Educational (образовательный)                    → VI
+G7.  M-HBP  | Meditative (медитативный)                        → VI
+G8.  S-HBP  | Somatic (телесный)                               → VI
+G9.  P-HBP  | Performance (перформанс)                         → VI
+G10. T-HBP  | Tech/Digital (цифровой)                          → VI
+
+============================================================
+H. МЕТОДОЛОГИЧЕСКОЕ / ЭПИСТЕМОЛОГИЧЕСКОЕ (8)
+============================================================
+
+H1.  Hard core (жёсткое ядро) | Lakatos                        → XV
+H2.  Protective belt (защитный пояс) | Lakatos                  → XV
+H3.  Progressive problemshift |
+     Прогрессивный сдвиг проблем                               → XV, P12
+H4.  Методологический агностицизм |
+     Methodological Agnosticism                                → P12
+H5.  Онтологическая честность |
+     Ontological Honesty                                       → P14
+H6.  Fail-fast (быстрый отказ)                                  → XV
+H7.  Энактивизм | Enactivism (Varela, Thompson)                 → Tier 0
+H8.  Кибернетика второго порядка |
+     Second-Order Cybernetics (von Foerster)                   → Tier 0
+
+============================================================
+I. МЕТАФОРЫ HBP (7)
+============================================================
+
+I1.  Overfitting (переобучение) | из ML                         → XII
+I2.  Technical Debt (технический долг) | из IT                   → XII
+I3.  Scale-free networks (безмасштабные сети)                    → XII
+I4.  Niche Construction (строительство ниши)                     → XII
+I5.  Limen (порог)                                              → XII
+I6.  GPS-навигатор | (метафора HBP для терапии)                  → XII
+I7.  Sandpile (песочная куча) | Per Bak                          → XII
+
+============================================================
+ИТОГО: 114 терминов в 9 категориях (A–I)
+============================================================
+
+ПРИМЕЧАНИЯ:
+• Категории A и G — собственные конструкты HBP
+• Категории B–F, H — заимствованные, с HBP-интерпретацией
+• Категория I — метафоры (определение = контекст использования)
+• Пересечения допустимы: термин может появиться в двух категориях,
+  но записывается один раз в приоритетной
+
+ОТКРЫТЫЕ ВОПРОСЫ ДЛЯ ВАЛИДАЦИИ:
+1. Включать ли имена собственные (Бьюдженталь, Мясищев, Рыжов,
+   Лэнгле, Фристон и т.д.) как отдельные записи или только
+   в поле «Источник»?
+2. Включать ли DSM-коды (F32, F33, F41.1) в глоссарий?
+3. Включать ли шкалы подробнее (описание субшкал) или только
+   название + аббревиатуру?
+4. Нужна ли категория J — «Лингвистическое / L-HBP» (TTR,
+   surprisal, BERTopic, LIWC, МКПП-17)?
+5. Нужна ли категория K — «Привязанность / Attachment» (IWM,
+   secure/avoidant/anxious/disorganized, good-enough mother,
+   false self, transitional space)?
+6. Приоритет русского или английского в основной записи?
+
+============================================================
+HBP GLOSSARY SKELETON v0.1 — END
+============================================================
