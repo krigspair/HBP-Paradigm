@@ -1,1 +1,1 @@
-CHAT_LOG_PLACEHOLDER_TO_BE_REPLACED
+articles/HBP_Overview_Article_Feb2026.txt content
