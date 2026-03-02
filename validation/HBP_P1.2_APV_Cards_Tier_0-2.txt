@@ -1,0 +1,347 @@
+
+# HBP P1.2 DELIVERABLE: APV-КАРТОЧКИ (Added Predictive Value) для Tier 0–2
+# Дата: 26.02.2026
+# Модуль: В-2
+# Для включения в: System Map v1.4, Часть III (после Tier-таблиц), новый подраздел 3.3
+
+========================================================================
+ADDED PREDICTIVE VALUE (APV) — ОПЕРАЦИОНАЛЬНЫЕ КАРТОЧКИ
+========================================================================
+
+## Преамбула
+
+Каждый Tier-элемент HBP должен продемонстрировать added predictive value (APV) —
+вклад в предсказание или объяснение клинических исходов СВЕРХ того, что даёт
+базовая модель (PHQ-9 + GAD-7 + WAI-SR). Если элемент не добавляет ΔR² ≥ порога,
+он переходит в Tier ниже или исключается.
+
+Формат карточки:
+  ID | Элемент | Tier | Предсказание | Метрика | Инструмент |
+  Успех (порог) | Провал (порог) | Дизайн | N минимальный | Срок
+
+========================================================================
+TIER 0: ФУНДАМЕНТ (не тестируется на APV — это hard core assumptions)
+========================================================================
+
+T0-1 | Энактивизм (Varela, Thompson & Rosch)
+     | Статус: фоновое допущение (participatory sense-making)
+     | APV не требуется — П1 тестируется через P1.1 операциональный тест
+     | (динамические > статических по ΔR²)
+
+T0-2 | Кибернетика 2-го порядка (von Foerster)
+     | Статус: фоновое допущение (наблюдатель включён в систему)
+     | APV не требуется — отражено в TTOM (T1-4) и AISI (П8)
+
+========================================================================
+TIER 1: PROTECTIVE BELT — MUST-HAVE APV
+========================================================================
+
+------------------------------------------------------------------------
+T1-1 | ЭПИГЕНЕТИКА (Hardware ↔ Input мост)
+------------------------------------------------------------------------
+Предсказание:
+  Methylation status (FKBP5, SLC6A4, NR3C1) предсказывает
+  (a) severity входа в терапию, (b) скорость ответа на D-HBP,
+  сверх PHQ-9 baseline.
+
+Метрика:         ΔR² в hierarchical regression (Step 1: PHQ-9 baseline;
+                 Step 2: methylation markers)
+Инструмент:      Methylation assays (bisulfite sequencing / pyrosequencing)
+Порог успеха:    ΔR² ≥ 0.05, p < 0.05 (small but significant)
+Порог провала:   ΔR² < 0.03, p > 0.10
+Дизайн:          Pre-post, correlational
+N минимальный:   40 (power 0.80 для ΔR²=0.05 при 3 predictors)
+Срок:            Q4 2027
+Примечание:      Level C батарея. Стоимость ~15-30 т.р./участник в РФ.
+                 При провале → эпигенетика остаётся в Tier 1 как
+                 «conceptual bridge», но убирается из батареи Level C.
+
+------------------------------------------------------------------------
+T1-2 | KELSO / HKB — CFR (Complexity + Flexibility + Resilience)
+------------------------------------------------------------------------
+Предсказание:
+  Switching rate в EMA time series (операционализация Flexibility)
+  предсказывает (a) PHQ-9/GAD-7 change, (b) sudden gains,
+  сверх WAI-SR и PHQ-9 baseline.
+
+Метрика:         (a) Correlation switching rate ↔ PHQ-9 change
+                 (b) ΔR² switching rate сверх WAI-SR + PHQ-9 baseline
+Инструмент:      EMA daily (affect grid 5 items, min 60 datapoints) →
+                 вычисление switching rate (# transitions between
+                 attractors / total timepoints)
+Порог успеха:    r ≥ 0.40 per case (SCED) или ΔR² ≥ 0.06 (group)
+Порог провала:   r < 0.20 across cases или ΔR² < 0.03
+Дизайн:          SCED N=6 (per-case) + cross-sectional N=80 (group)
+N минимальный:   6 (SCED), 80 (group)
+Срок:            Q2 2027 (SCED), Q4 2027 (group)
+Примечание:      Ключевой тест CFR модели (V). При провале →
+                 CFR теряет operational backbone → пересмотр П11.
+
+------------------------------------------------------------------------
+T1-3 | ATTACHMENT (Bowlby/Winnicott → FEP)
+------------------------------------------------------------------------
+Предсказание:
+  Attachment pattern (ECR-12: Anxiety, Avoidance) модерирует
+  эффективность D-HBP: avoidant clients показывают более
+  медленный ответ из-за PE-intolerance (downweighting PE).
+
+Метрика:         Moderation analysis: ECR-12 Avoidance × Time → PHQ-9
+Инструмент:      ECR-12 (12 items, 2 subscales)
+Порог успеха:    Interaction effect β ≥ 0.20, p < 0.05
+                 (avoidant clients: slower trajectory)
+Порог провала:   Interaction effect β < 0.10, p > 0.10
+Дизайн:          SCED N=6 (qualitative pattern) +
+                 longitudinal N=60 (multi-level model)
+N минимальный:   6 (SCED), 60 (group)
+Срок:            Q2 2027 (SCED), Q2 2028 (group)
+Примечание:      Уже есть meta-analytic evidence r≈0.35 для
+                 attachment → outcome (System Map XIII).
+                 HBP-specific: FEP-механизм (PE downweighting).
+                 При провале → attachment остаётся в Tier 1,
+                 но FEP-интерпретация (precision allocation)
+                 теряет поддержку.
+
+------------------------------------------------------------------------
+T1-4 | DOUBLE BIND (Bateson → FEP)
+------------------------------------------------------------------------
+Предсказание:
+  Double bind exposure (ODB-CL или ad hoc checklist)
+  предсказывает attractor trapping (NCT metrics / AAQ-II),
+  сверх general distress (PHQ-9).
+
+Метрика:         ΔR² double bind score → AAQ-II, сверх PHQ-9
+Инструмент:      ODB-CL (ad hoc, O-HBP); AAQ-II (7 items)
+Порог успеха:    ΔR² ≥ 0.04, p < 0.05
+Порог провала:   ΔR² < 0.02, p > 0.10
+Дизайн:          Cross-sectional, organizational sample
+N минимальный:   100
+Срок:            Q4 2027
+Примечание:      ODB-CL ещё не валидирован → Phase 0: item
+                 generation + expert review (Q2 2026).
+                 При провале → double bind остаётся как
+                 клиническая эвристика, но убирается из
+                 формальной модели.
+
+========================================================================
+TIER 2: PROTECTIVE BELT — ENRICHMENT APV
+========================================================================
+(Более мягкие пороги: эти элементы обогащают модель,
+ но не критичны для hard core)
+
+------------------------------------------------------------------------
+T2-1 | SCHIEPEK / SNS (Synergetics in Psychotherapy)
+------------------------------------------------------------------------
+Предсказание:
+  SNS dynamic complexity коррелирует с CSD markers и
+  предсказывает timing фазового перехода (sudden gain).
+
+Метрика:         Temporal correlation: SNS complexity peak →
+                 sudden gain within 1-3 sessions
+Инструмент:      SNS (Synergetic Navigation System, daily self-report)
+Порог успеха:    Sensitivity ≥ 0.60, Specificity ≥ 0.60 для
+                 предсказания sudden gain
+Порог провала:   Sensitivity < 0.40 OR Specificity < 0.40
+Дизайн:          SCED N=6, daily SNS + EMA
+N минимальный:   6
+Срок:            Q2 2027
+Примечание:      SNS — готовый инструмент (Schiepek et al.).
+                 При провале → CSD-alert строится без SNS.
+
+------------------------------------------------------------------------
+T2-2 | ECKER / RECONSOLIDATION (Mismatch → Schema Erasure)
+------------------------------------------------------------------------
+Предсказание:
+  Mismatch experience (session recording coding) →
+  reconsolidation window (4-6 hrs) → measurable prior change
+  (DERS-18 subscale shift within 1 week post-mismatch session).
+
+Метрика:         Within-subject effect: DERS-18 pre vs. post
+                 mismatch session (1 week window)
+Инструмент:      Session coding (mismatch moment identification) +
+                 DERS-18 (weekly)
+Порог успеха:    d ≥ 0.30 within-subject, replicated in ≥ 4/6 cases
+Порог провала:   d < 0.15 OR replicated in < 2/6 cases
+Дизайн:          SCED N=6, session-by-session coding
+N минимальный:   6
+Срок:            Q4 2027
+Примечание:      Ecker's ECPE protocol. При провале →
+                 reconsolidation как механизм ставится под вопрос
+                 → переход в Tier 3.
+
+------------------------------------------------------------------------
+T2-3 | NEUROINFLAMMATION (Dantzer, Miller)
+------------------------------------------------------------------------
+Предсказание:
+  Baseline IL-6 / CRP уровень модерирует ответ на D-HBP:
+  высокий inflammation → меньший ответ на чисто
+  психологическую интервенцию (нужен C-HBP adjunct).
+
+Метрика:         Moderation: IL-6/CRP × Treatment → PHQ-9 change
+Инструмент:      Blood draw: IL-6, TNF-α, CRP (hs-CRP)
+Порог успеха:    Interaction β ≥ 0.25, p < 0.05
+Порог провала:   Interaction β < 0.10, p > 0.10
+Дизайн:          Pre-post, D-HBP sample
+N минимальный:   40
+Срок:            Q4 2028
+Примечание:      Level C батарея. Стоимость ~3-5 т.р./анализ в РФ.
+                 При провале → neuroinflammation остаётся в Tier 2
+                 как «context variable», но не включается в
+                 treatment matching algorithm.
+
+------------------------------------------------------------------------
+T2-4 | DMN / RAICHLE (Default Mode Network)
+------------------------------------------------------------------------
+Предсказание:
+  DMN-CEN anticorrelation уменьшается (healthier balance)
+  после D-HBP, и это изменение коррелирует с PHQ-9 change.
+
+Метрика:         (a) Pre-post DMN-CEN functional connectivity change
+                 (b) Correlation FC change ↔ PHQ-9 change
+Инструмент:      fMRI resting state, graph theory metrics
+Порог успеха:    r ≥ 0.35, p < 0.05 (FC change ↔ symptom change)
+Порог провала:   r < 0.15, p > 0.10
+Дизайн:          Pre-post, within-subject
+N минимальный:   20 (fMRI power considerations)
+Срок:            Q4 2028
+Примечание:      Level C. Стоимость ~10-15 т.р./scan в РФ.
+                 При провале → DMN остаётся в Tier 2 как
+                 «neuroscience anchor», но без operational role.
+
+------------------------------------------------------------------------
+T2-5 | SDT / DECI & RYAN (Self-Determination Theory)
+------------------------------------------------------------------------
+Предсказание:
+  BPNS (Basic Psychological Needs Satisfaction) предсказывает
+  FM1-FM3 profiles и модерирует ответ на D-HBP.
+
+Метрика:         (a) Correlation BPNS subscales ↔ FM1-FM3 ratings
+                 (b) Moderation: BPNS × Treatment → FM change
+Инструмент:      BPNS-21 (autonomy, competence, relatedness)
+Порог успеха:    r ≥ 0.40 (BPNS ↔ FM) + moderation β ≥ 0.20
+Порог провала:   r < 0.20 OR β < 0.10
+Дизайн:          Cross-sectional (correlation) + SCED (moderation)
+N минимальный:   80 (correlation), 6 (SCED qualitative)
+Срок:            Q2 2028
+Примечание:      SDT ↔ FM мост через Рыжова (XVII, 17.3).
+                 При провале → SDT остаётся как Tier 2
+                 enrichment, но FM-SDT мост убирается.
+
+------------------------------------------------------------------------
+T2-6 | SAFRAN-MURAN (Rupture-Repair as PE)
+------------------------------------------------------------------------
+Предсказание:
+  Rupture-repair episodes (coded from session recordings)
+  предсказывают (a) epistemic trust gain (ETMCQ-R Trust
+  change), (b) outcome, сверх WAI-SR средний балл.
+
+Метрика:         (a) Correlation: # repair episodes → ETMCQ-R
+                     Trust change
+                 (b) ΔR² rupture-repair → PHQ-9 change, сверх WAI-SR
+Инструмент:      Rupture Resolution Rating System (3RS, Eubanks et al.)
+                 + ETMCQ-R + WAI-SR
+Порог успеха:    r ≥ 0.35 (repairs → ET gain) + ΔR² ≥ 0.04
+Порог провала:   r < 0.15 OR ΔR² < 0.02
+Дизайн:          SCED N=6, session coding + weekly measures
+N минимальный:   6 (SCED), 60 (group replication)
+Срок:            Q4 2027 (SCED), Q2 2028 (group)
+Примечание:      Прямой тест П8-П9 связки. При провале →
+                 rupture-repair как механизм ET change
+                 не подтверждён → пересмотр П9 операционализации.
+
+------------------------------------------------------------------------
+T2-7 | PENNEBAKER / LIWC (Linguistic Markers)
+------------------------------------------------------------------------
+Предсказание:
+  LIWC-derived markers (1st person sg, negative emotion words,
+  absolutist language) (a) коррелируют с PHQ-9/GAD-7 на baseline,
+  (b) показывают CSD-pattern перед sudden gains.
+
+Метрика:         (a) Cross-sectional r: LIWC markers ↔ PHQ-9
+                 (b) Temporal: CSD-pattern (autocorr + variance
+                     increase) в LIWC-affect перед sudden gain
+Инструмент:      LIWC-22 / RuLIWC, session transcripts
+Порог успеха:    (a) r ≥ 0.30 (replication of Tölbl d=0.44-0.72)
+                 (b) CSD sensitivity ≥ 0.50, specificity ≥ 0.50
+Порог провала:   (a) r < 0.15 OR (b) sens < 0.30
+Дизайн:          SCED N=6, session-by-session transcription
+N минимальный:   6 (SCED), 30 (group cross-sectional)
+Срок:            Q2 2027
+Примечание:      L-HBP backbone (XX). При провале →
+                 L-HBP переходит в Tier 3 «concept watch».
+                 RuLIWC (52 categories) vs LIWC-22 (73) — gap.
+
+------------------------------------------------------------------------
+T2-8 | KAHNEMAN / SYSTEM 1-2 (Precision Allocation)
+------------------------------------------------------------------------
+Предсказание:
+  CRT (Cognitive Reflection Test) score коррелирует с
+  precision allocation strategy и модерирует D-HBP response:
+  high CRT (=good System 2) → faster response.
+
+Метрика:         Moderation: CRT × Time → PHQ-9 trajectory
+Инструмент:      CRT (3–7 items, Frederick 2005)
+Порог успеха:    Interaction β ≥ 0.15, p < 0.10
+Порог провала:   Interaction β < 0.05, p > 0.20
+Дизайн:          SCED N=6 (qualitative) + group N=60
+N минимальный:   6 / 60
+Срок:            Q4 2028
+Примечание:      Tier 2 enrichment. Мягкий порог.
+                 При провале → CRT убирается из батареи,
+                 System 1/2 остаётся как метафора.
+
+========================================================================
+TIER 3: CONCEPT WATCH (APV не тестируется до перевода в Tier 2)
+========================================================================
+
+Элементы Tier 3 не получают APV-карточек. Они мониторятся
+на предмет появления evidence, достаточного для перевода в Tier 2.
+
+| ID   | Элемент                        | Условие перевода в Tier 2              |
+|------|--------------------------------|----------------------------------------|
+| T3-1 | Bayesian Mechanics             | Публикация с формальным мостом         |
+|      | (Sakthivadivel)                | FEP ↔ thermodynamics ↔ psyche         |
+| T3-2 | IIT (Tononi)                   | Phi-метрика для психотерапевтических    |
+|      |                                | данных (не только нейро)               |
+| T3-3 | Habitus (Bourdieu)             | Операционализация habitus → priors     |
+|      |                                | с валидированным инструментом          |
+| T3-4 | Telomere Biology               | RCT показывает психотерапия → telomere |
+|      | (Blackburn & Epel)             | lengthening (current evidence: weak)   |
+| T3-5 | GWT (Baars, Dehaene)           | Formal bridge GWT ↔ FEP precision      |
+| T3-6 | Broadbent & Hammersley         | Updated replication with modern methods|
+
+========================================================================
+СВОДНАЯ ТАБЛИЦА: ROADMAP ТЕСТИРОВАНИЯ
+========================================================================
+
+| Phase | Срок      | Что тестируем                        | N    | Приоритет |
+|-------|-----------|--------------------------------------|------|-----------|
+| 0     | Q2 2026   | Инструменты: ODB-CL items, TTOM-S   | —    | P0        |
+|       |           | pilot, DBQ-HBP/WFQ-HBP items        |      |           |
+| 1     | Q2-Q4 2026| SCED pilot: T1-2, T2-1, T2-2,       | 6-8  | P1        |
+|       |           | T2-6, T2-7 (все одновременно)        |      |           |
+| 2     | Q1-Q2 2027| Group pilot: T1-1, T1-2, T1-3,      | 40-80| P2        |
+|       |           | T1-4, T2-5, T2-8                     |      |           |
+| 3     | Q2-Q4 2027| Replication + Level C: T2-3, T2-4    | 20-40| P3        |
+| 4     | 2028      | RCT: KC-5 (D-HBP vs CBT)            | 80   | P3        |
+
+========================================================================
+ИНТЕГРАЦИЯ В SYSTEM MAP v1.4
+========================================================================
+
+Куда вставить:
+- Полная таблица → Часть III, новый подраздел 3.3
+  «APV-карточки: операциональные критерии Tier-элементов»
+- Сводный roadmap → Часть XV (Fail-fast), подраздел 15.4
+- Cross-ref: каждая карточка ссылается на соответствующий
+  Tier-элемент в III и Kill Criteria в XV.2 (P0 deliverable)
+
+Связь с Kill Criteria (P0):
+- KC-1 (attractor trapping) ← T1-2 (Kelso) + T2-1 (Schiepek)
+- KC-2 (ET mediation) ← T2-6 (Safran-Muran) + T1-3 (Attachment)
+- KC-3 (precision re-weighting) ← T1-2 (Kelso) + T2-8 (Kahneman)
+- KC-4 (TTOM) ← отдельный тест (не привязан к конкретному Tier)
+- KC-5 (D-HBP vs CBT) ← интегральный тест всех Tier-элементов
+
+========================================================================
+КОНЕЦ P1.2 DELIVERABLE
+========================================================================
